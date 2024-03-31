@@ -1,0 +1,43 @@
+@media screen and (max-width: 1000px) {
+    p {
+        font-size: 0.9rem;
+        line-height: 1.8rem;
+    }
+
+    .ser-list {
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 825px) {
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    nav {
+        position: fixed;
+        width: 50%;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        flex-direction: column;
+        background: #b0bef0;
+        border-left: 1px solid #6564bf;
+        z-index: 9;
+        transform: translateX(100%);
+        transition: .2s ease-in-out;
+    }
+
+    nav ul {
+        height: 100vh;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav-active {
+        transform: translateX(0);
+    }
+
+}
